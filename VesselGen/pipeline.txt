@@ -1,0 +1,20 @@
+Image processing
+1. In preprocessing.py, preprocess_img(filename1.nii.gz, filename2.nii.gz)
+2. vesseg filename2.nii.gz
+3. bin2mesh filename2.nii.gz filename2.vtp
+4. vmtksurfacewriter -ifile filename2.vtp -ofile filename2.stl
+5. binvox filename2.stl 
+6. thinnvox filename2.binvox
+
+Node selection
+7. In binvox_rw.py, denoise() / get_main_struct() / get_coords_file()
+8. In binvox_rw.py, use sample_points() to get the root nodes
+9. (Optional) Use SurfaceParametrization.py to obtain a complete brain model
+10. In LeafLocOptimizer.py, obtain the lead node coordinates
+
+Optimization
+11. In GCO.py, conduct network optimization with GCO forest method
+
+Result analysis
+11. Use GCOAnalyzer.py for morphometric property analysis
+
