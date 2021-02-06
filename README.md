@@ -1,6 +1,7 @@
 # VesselGen
 
 Please cite the following paper in which VesselGen is described:
+
 Shen, J., Faruqi, A. H., Jiang, Y., & Maftoon, N. (2021). Mathematical Reconstruction of Patient-Specific Vascular Networks Based on Clinical Images and Global Optimization. IEEE Access, 9, 20648–20661. 
 https://ieeexplore.ieee.org/document/9328247 
 
